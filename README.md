@@ -12,10 +12,10 @@ Based on the results, the most optimal epsilon value depends on the number of pl
 
 ## Exploration and Exploitation
 ### Exploitation 
-	Basically greedy algo bc you’re always exploiting your current knowledge 
+Basically greedy algo bc you’re always exploiting your current knowledge 
 
 ### Exploration 
-	Occurs when you have epsilon not equal to 0 bc then you explore other arms past ur current knowledge
+Occurs when you have epsilon not equal to 0 bc then you explore other arms past ur current knowledge
  
 ## Action-Value Methods
 Estimated values for each arm, change when arm is pulled 
