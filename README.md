@@ -1,4 +1,5 @@
 # Multi-Armed-Bandit-Problem
+In this project, we implemented a multi-armed bandit algorithm providing a solution for a n-armed bandit, where n can be 5 or 10 or 20. The total number of plays are 2000.
 
 ## Results 
 For our solution, we implemented an epsilon-greedy algorithm where epsilon can be specified. This allows us to compare the greedy algorithm (epsilon = 0) to other values of epsilon that allow for exploration. For each step we randomly generate a number from 0 to 1, if this number is less than our epsilon value, we randomly choose an arm. If the number is greater than epsilon, we will pull the arm with the highest estimated value. When epsilon is greater than 0, this method allows us to avoid getting stuck doing the same action. Once the arm has been pulled, we record the reward amount and update our estimated value for the arm pulled. The updated estimate is the old estimate + ((reward - the old estimate) divided by the number of pulls of said arm). This method is then repeated for the specified number of plays. 
